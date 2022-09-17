@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localiza</title>
+</head>
+<body>
+    <h1>Identificador de nacionalidade</h1>
+    País de origem: <input type="text" name="orgtxt" id="org">
+    <input type="button" value="Verificar" onclick="origem()">
+
+    <div id="txt">
+
+
+    </div>
+
+    <script>
+        function origem(){
+            var origem = document.getElementById('input#org')
+            var txt1 = document.querySelector('div#txt')
+
+            txt1.innerText = `Você veio do ${origem}.<br>`
+            if (origem = "Brasil") {
+                txt1.innerHTML += "Você é Estrangeiro"
+            } else {
+                txt1.innerHTML += "Você é Brasileiro"
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>
