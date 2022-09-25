@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+</head>
+<body>
+    <h1>Digite sua Temperatura</h1>
+    <button onclick="quest()">Conversor</button><br>
+    <br>
+    <div id="area">
+        Clique no botão acima para começar a conversão
+    </div>
+
+    <script>
+    var a = window.document.getElementById('area')
+        function quest(){
+            let celsius = window.prompt('Digite a temperatura em ° Celsius')
+
+            var f = (celsius * 1.8) + 32
+            var k = celsius + 273.15
+
+            a.innerHTML = `<h1>A conversão de ${celsius}°C</h1>`
+            a.innerHTML += `<p>${f}°F (Em fahreinheit)</p>`
+            a.innerHTML += `<p>${k}°K (Em Kelvin)`
+
+
+            
+        }
+    </script>
+</body>
+</html>

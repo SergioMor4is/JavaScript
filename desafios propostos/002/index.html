@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boas vindas</title>
+</head>
+<body>
+    <h1>Vamos começar</h1>
+    <button onclick="quest()">Start</button>
+
+    <script>
+        function quest(){
+            let nome = window.prompt('Qual o seu nome?')
+            let idade = window.prompt('Qual a sua idade?')
+            window.alert(`Acabei de conhecer o ${nome} que tem ${idade} anos.`)
+        }
+    </script>
+</body>
+</html>

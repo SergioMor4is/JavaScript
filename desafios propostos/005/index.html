@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Medidas</title>
+</head>
+<body>
+    <h1>Digite o valor em metros</h1>
+    <button onclick="quest()">Conversor</button><br>
+    <br>
+    <div id="area">
+        Clique no botão acima para começar a conversão
+    </div>
+
+    <script>
+    var a = window.document.getElementById('area')
+        function quest(){
+            let m = window.prompt('Digite o valor em metros')
+
+            var km = m / 1000
+            var c = m * 100
+            var mm = m * 1000
+
+            a.innerHTML = `<h1>A conversão de ${m} metros</h1>`
+            a.innerHTML += `<p>${km} em Km </p>`
+            a.innerHTML += `<p>${c} em Cm </p>`
+            a.innerHTML += `<p>${mm} em Mm </p>`
+
+
+            
+        }
+    </script>
+</body>
+</html>

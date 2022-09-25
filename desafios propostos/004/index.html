@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular troco</title>
+</head>
+<body>
+    <h1>Passe seu produto no Caixa</h1>
+    <button onclick="quest()">Calcular</button>
+
+    <script>
+        function quest(){
+            let nome = window.prompt('Qual o nome do produto que deseja comprar?')
+            let preco = window.prompt(`Qual o preço do ${nome}?`)
+            let saldo = window.prompt(`Qual o valor em dinheiro do pagamento?`)
+            var troco = (saldo - preco)
+            window.alert(`Você comprou um ${nome} por R$${preco}!
+            Valor de troco R$${troco}`)
+        }
+    </script>
+</body>
+</html>

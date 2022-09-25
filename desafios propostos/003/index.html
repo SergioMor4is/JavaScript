@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antes e Depois</title>
+</head>
+<body>
+    <h1>Antecessor e Sucessor</h1>
+    <button onclick="quest()">Antes e Depois</button>
+
+    <script>
+        function quest(){
+            let num = window.prompt('Digite um número')
+            var ant = num - 1
+            var dep = ant + 2
+            window.alert(`O antecessor de ${num} é ${ant} e o sucessor ${dep}`)
+        }
+    </script>
+</body>
+</html>
