@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Detectando Identidades</h1>
+    Informe sua nacionalidade <input type="text" name="txtid" id="txtid"> <input type="button" value="Verificar
+    " onclick="Calcular()"> 
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function Calcular(){
+            var txtv = document.querySelector('input#txtid')
+            var res = document.querySelector('div#res')
+            var nac = txtv.value
+            res.innerHTML = `Você é ${nac}.<br>`
+                if (nac != "Brasileiro") {
+                    res.innerHTML += "Você é estrangeiro, Bem Vindo ao Brasil!<br>" 
+                } else {
+                    res.innerHTML += "Você é conterrâneo! Bem Vindo de volta!"
+                }
+
+                res.innerHTML += "Aproveite o país!"    
+            
+        }
+    </script>
+</body>
+</html>
